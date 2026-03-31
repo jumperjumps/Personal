@@ -1,0 +1,17 @@
+.plaster-regular {
+  font-family: "Plaster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+    font-family: "Plaster";
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+canvas {
+  display: block;
+  margin-left: 500px;
+  margin-top: 100px;
+}
