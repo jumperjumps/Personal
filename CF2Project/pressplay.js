@@ -25,9 +25,9 @@ function setup() {
   let positions = [];
 
   for (let row = 1; row <= 3; row ++) {
-    for (let x of xPos) {
-      positions.push( {x, y: yPos * row} );  
-    }
+    for (let x of xPos) {
+      positions.push( {x, y: yPos * row} );  
+   }
   }
   
 // Creates the differnt speeds and colors for the cubes 

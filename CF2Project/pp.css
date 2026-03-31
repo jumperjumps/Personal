@@ -3,8 +3,12 @@
   font-weight: 400;
   font-style: normal;
 }
+html{
+    background-color: black;
+}
 
 h1{
+    color:#ECA72C;
     font-family: "Plaster";
     padding-left: 20px;
     padding-top: 20px;
