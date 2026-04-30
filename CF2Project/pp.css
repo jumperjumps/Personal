@@ -1,21 +1,202 @@
-.plaster-regular {
-  font-family: "Plaster", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-html{
-    background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-h1{
-    color:#ECA72C;
-    font-family: "Plaster";
-    padding-left: 40px;
-    padding-top: 20px;
+body {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
-canvas {
-  display: block;
-  margin-left: 500px;
-  margin-top: 100px;
+h1 {
+ margin-top: 100px;
+  color: #ECA72C;
+  font-family: 'Plaster';
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Menu */
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+  width: 600px;
+}
+
+#menu p {
+  color: #888;
+  font-size: 13px;
+}
+
+#difficulty-cards {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 160px;
+  padding: 20px;
+  background: #1e1e1e;
+  border: 1px solid #373737;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.card:hover {
+  background: #2a2a2a;
+}
+
+.card-label {
+  font-family: 'Plaster';
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-stat {
+  font-size: 11px;
+  color: #888;
+}
+
+/* game */
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 30px;
+}
+
+/*each shape cell*/
+.shape {
+  width: 100px;
+  height: 100px;
+  border-radius: 0%;
+  cursor: pointer;
+  transition: border-radius 0.05s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shape.stopped {
+  border: 3px solid;
+  cursor: default;
+}
+
+.shape-score {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.shape-label {
+  font-size: 9px;
+}
+
+/* Display */
+#display {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 600px;
+}
+
+#difficulty-badge {
+  font-size: 10px;
+  font-weight: 700;
+  min-width: 50px;
+}
+
+#timer-track {
+  flex: 1;
+  height: 8px;
+  background: #282828;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#timer-bar {
+  height: 100%;
+  width: 100%;
+  background: #84B082;
+  border-radius: 4px;
+  transition: width 1s linear, background 1s linear;
+}
+
+#timer-text {
+  font-size: 11px;
+  color: #c8c8c8;
+  min-width: 30px;
+  text-align: right;
+}
+
+/* ── game over ────────────────────────────────────── */
+#gameover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#gameover-panel {
+  background: #191919;
+  border: 1px solid #3c3c3c;
+  border-radius: 14px;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+#gameover-reason {
+  font-size: 11px;
+  color: #a0a0a0;
+}
+
+#gameover-score {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+#gameover-out {
+  font-size: 11px;
+  color: #5a5a5a;
+}
+
+#gameover-rating {
+  font-size: 13px;
+}
+
+#gameover-hint {
+  font-size: 11px;
+  color: #464646;
+  margin-top: 8px;
 }
