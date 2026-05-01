@@ -92,7 +92,7 @@ h1 {
   gap: 30px;
 }
 
-/*each shape cell*/
+/* each shape cell */
 .shape {
   width: 100px;
   height: 100px;
@@ -156,7 +156,7 @@ h1 {
   text-align: right;
 }
 
-/* ── game over ────────────────────────────────────── */
+/* game over */
 #gameover {
   display: flex;
   align-items: center;

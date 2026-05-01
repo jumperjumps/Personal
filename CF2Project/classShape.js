@@ -6,13 +6,11 @@ class Shape {
     this.state        = 'growing';
     this.score        = null;
 
-    // create the div element
     this.el = document.createElement('div');
     this.el.classList.add('shape');
     this.el.style.backgroundColor = this.col;
   }
-
-  // ── state machine update ──────────────────────────────────────────────
+  // state machine
   update() {
     if (this.state === 'stopped') return;
 
@@ -30,18 +28,17 @@ class Shape {
       this.state        = 'growing';
     }
 
-    // update the border radius on the div
     const borderRadius = (this.rad / 100) * 50;
     this.el.style.borderRadius = borderRadius + '%';
   }
 
-  // ── freeze the shape and calculate score ──────────────────────────────
+  // freeze the shape and calculate score 
   stop() {
     if (this.state === 'stopped') return;
     this.state = 'stopped';
     this.score = Math.round(100 - this.rad);
 
-    // update the div to show score
+    // update div to show score
     const col              = this.scoreColor();
     this.el.style.backgroundColor = this.scoreColor() + '15';
     this.el.style.borderColor     = col;
@@ -54,7 +51,7 @@ class Shape {
     `;
   }
 
-  // ── reset back to moving ──────────────────────────────────────────────
+  // reset back to moving
   reset() {
     const palette     = ['#ECA72C', '#F25F5C', '#84B082', '#717EC3'];
     this.rad          = Math.random() * 100;
@@ -63,7 +60,7 @@ class Shape {
     this.state        = 'growing';
     this.score        = null;
 
-    // reset the div
+    // reset 
     this.el.classList.remove('stopped');
     this.el.style.backgroundColor = this.col;
     this.el.style.borderColor     = 'transparent';
@@ -71,14 +68,12 @@ class Shape {
     this.el.innerHTML             = '';
   }
 
-  // ── score color ───────────────────────────────────────────────────────
   scoreColor() {
     if (this.score >= 80) return '#84B082';
     if (this.score >= 50) return '#ECA72C';
     return '#F25F5C';
   }
 
-  // ── score label ───────────────────────────────────────────────────────
   scoreLabel() {
     if (this.score >= 80) return 'GREAT';
     if (this.score >= 50) return 'OK';
