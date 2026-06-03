@@ -1,13 +1,17 @@
 body {
 background-color: black;
 overflow-x: hidden;
-color: bisque;
+color: rgba(255, 228, 196, 1.0);
 font-family: "Syncopate", sans-serif;
 margin: 10px;
 }
 
 header {
-background-color: green;
+background-image: url(assets/horiz-home.JPG);
+background-repeat: no-repeat;
+background-position: top;
+background-size: cover;
+opacity: 0.6;
 display: flex;
 justify-content: center;
 padding-top: 450px;
@@ -19,11 +23,15 @@ font-style: normal;
 
 nav {
 display: flex;
-padding: 20px;
+padding: 25px;
 justify-content: center;
 justify-content: space-between;
 text-align: center;
 margin-top: -50px;
+}
+nav a:hover{
+background-color: aqua;
+font-size: 20px
 }
 
 .homegrid {
