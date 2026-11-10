@@ -31,8 +31,8 @@ a:hover { opacity: 0.6; }
 
 /* Gray boxes that stand in for photos. Put an <img> inside to replace one. */
 .photo {
-  background: var(--placeholder);
-  color: white;
+  
+  color:var(--text);
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -40,7 +40,7 @@ a:hover { opacity: 0.6; }
   align-items: center;
   justify-content: center;
 }
-.photo img { width: 100%; height: 100%; object-fit:fill ; }
+.photo img { width: 800px; height: auto; object-fit:fill; }
 
 /* Big heavy numbers */
 .big-number {
@@ -86,12 +86,12 @@ h1 {
   grid-template-columns: 2.7fr 1fr 0.5fr;
   gap: 50px;
 }
-.hero-photo { min-height: 600px; }
+.hero-photo { min-height: 300px; }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:flex-end;
   gap: 28px;
 }
 .hero-text h2 {
@@ -102,14 +102,8 @@ h1 {
   text-transform: uppercase;
 }
 .hero-text p { margin: 0; max-width: 30ch; line-height: 1.7; }
-.hero-text .link { align-self: flex-start; }
+.hero-text .link { align-self: flex-start;}
 
-.hero-side {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
 .small-photo { width: 75%; aspect-ratio: 1; }
 
 /* ---------- Moving band ---------- */
@@ -198,7 +192,7 @@ h1 {
 /* ---------- Footer ---------- */
 .footer {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-template-columns: 2.5fr 1fr 1fr;
   gap: 50px;
   align-items: end;
   margin-top: 170px;
