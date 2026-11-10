@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../CF2 Code/webLAs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "jumperjumps.github.io"
+	}
+}

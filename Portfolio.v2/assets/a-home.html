@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Laura Jumper Portfolio</title>
+
+ <link rel="stylesheet" href="portfolio.css">
+
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lexend+Exa:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lexend+Exa:wght@100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
+ <style>
+
+.homegrid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto auto;
+     gap: 20px;
+     padding: 20px;
+     align-items: start;
+    }
+
+.big-header {
+     grid-column: 1 / 2;
+     grid-row: 1 / 2;
+     font-family: var(--font-primary);
+     color:rgba(235, 94, 40, 30%);
+     font-size: 120px;
+     font-weight: 700;
+     line-height: 1;
+     margin-top: 90px;
+     margin-left: 60px;
+    }
+
+.flexhome {
+     grid-column: 1 / 2;
+     grid-row: 2 / 3;
+     margin-left: 70px;
+     max-width: 600px;
+    }
+
+.fleximg {
+     grid-column: 2 / 3;
+     grid-row: 1 / 3;
+     margin-left: 40px;
+    }
+
+.fleximg img {
+     height: 630px;
+     border-radius: 5px;
+     margin-left: 30px;
+    }
+
+h3{
+    color:var(--color-accent);
+    }
+
+ @media (max-width: 1331px) {
+
+     .homegrid {
+         grid-template-columns: 1fr;
+         grid-template-rows: auto auto auto;
+         padding: 10px;
+     }
+
+     .big-header {
+         grid-column: 1;
+         font-size: 60px;
+         text-align: center;
+     }
+
+     .flexhome {
+         margin-left: 0;
+         max-width: 100%;
+         padding: 0 10px;
+     }
+
+     .fleximg {
+         grid-column: 1;
+         grid-row: 3;
+     }
+
+     .fleximg img {
+         width: 100%;
+         height: auto;
+         margin-left: 0;
+     }
+ }
+
+ </style>
+</head>
+
+<body>
+
+<header> 
+ <h1>
+     Laura Jumper <a href="a-home.html"><i>Portfolio</i></a> 
+ </h1>
+
+ <nav>
+     <h2>
+         <a href="a-home.html">Home</a> | 
+         <a href="b-design.html">Design</a> | 
+         <a href="c-resume.html">Resume</a>
+     </h2>
+ </nav>
+</header>
+
+<main class="homegrid">
+
+    <div class="big-header">
+        Creative Designer
+    </div>
+
+    <section class="flexhome">
+        <h3>About Me</h3>
+        <p>Is currently a student at University of Colorado Boulder in the College of Engineer and ATLS department. 
+            She has been diving into many different creative tracks in her education and is enthusiastic about getting 
+            more experience in the creative tech field.</p>
+        <p><i>Email: jumpermlaura@gmail.com</i></p>
+    </section>
+
+    <aside class="fleximg">
+        <img src="assets/Profile.jpg" alt="A photo of me, standing in front of a red brick wall. I have a white polo with a brown vest over and wearing blue jeans.">
+    </aside>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lexend+Exa:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Lexend+Exa:wght@100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Jumper Portfolio</title>
+<style>
+.codegrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 30px; 
+        align-items: start;
+        padding: 20px;
+    }
+
+.flexcode {
+        margin-left: 20px;
+        margin-top: 50px;
+        max-width: 600px;
+    }
+
+.flexvid video{
+        margin-top: 40px;
+    }
+
+.flexcode h2{
+    color:var(--color-accent);
+}
+
+    @media (max-width: 1024px) {
+
+    .codegrid {
+        grid-template-columns: 1fr;   
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .flexcode {
+        margin-left: 0;
+        margin-top: 0;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .flexvid video {
+        width: 100%;       
+        height: auto;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+}
+</style>
+</head>
+
+ 
+<body>
+   <header>
+        <h1>Design <a href="a-home.html"><i>Portfolio</i></a>
+    </h1>
+
+    <nav>
+        <h2><a href="a-home.html">Home</a> | 
+        <a href="b-design.html">Design</a> | 
+        <a href="c-resume.html">Resume</a></h2> 
+    </nav>
+    </header>
+
+     <nav class="nav2">
+        <h3><a href="b2-designs.html">Design</a> 
+            <a href="b2-photo.html">Photography</a> 
+            <a href="b2-code.html">Code</a></h3>
+    </nav>
+    
+   
+    <main class="codegrid">
+
+       <section class="flexcode">
+        <h2>Press Play</h2>
+        <p>This interactive generative art piece was created using JavaScript and demonstrates proficiency in writing clean, well-structured code while exploring creative interaction. The project highlights the ability to design engaging, responsive visuals through code, balancing technical execution with artistic expression. The code is clearly organized and documented, allowing viewers to easily understand and apply the techniques to their own projects.
+        A primary challenge of this project was developing a visual identity independent of the existing real-world company. This required creating a design aesthetic from the ground up, as well as designing an effective layout capable of organizing a large amount of information in a clear manner.</p>
+        </section>
+
+        <aside class="flexvid">
+       <video autoplay width="400" height="400">
+        <source src="assets/PressPlay.mov" type="video/mp4">
+        </video>
+    </aside>
+    </main>
+    
+</body>
+</html>
